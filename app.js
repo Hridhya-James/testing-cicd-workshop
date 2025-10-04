@@ -42,7 +42,7 @@ app.post('/calculate', (req, res) => {
             }
             break;
         default:
-            return res.status(400).json({ error: 'Invalid operation' });
+            return res.status(400).json({ error: 'Try again' });
     }
      res.json({ result });
 });
